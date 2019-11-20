@@ -39,7 +39,6 @@ namespace GateWay.Models
         public DbSet<Plan> Plans { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Teacher> Teachers { get; set; }
-        public DbSet<User> Users { get; set; }
         public DbSet<Arrival> Arrivals { get; set; }
     }
 }
