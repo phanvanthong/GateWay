@@ -228,7 +228,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CarsController.cs" />
     <Compile Include="Controllers\CarTypeController.cs" />
+    <Compile Include="Controllers\GaragesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PlansController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
@@ -236,17 +238,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201911131602181_InitialCreate.cs" />
-    <Compile Include="Migrations\201911131602181_InitialCreate.Designer.cs">
-      <DependentUpon>201911131602181_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201911201802513_init.cs" />
+    <Compile Include="Migrations\201911201802513_init.Designer.cs">
+      <DependentUpon>201911201802513_init.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201911131651128_FirstChange.cs" />
-    <Compile Include="Migrations\201911131651128_FirstChange.Designer.cs">
-      <DependentUpon>201911131651128_FirstChange.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201911131745434_SecondChange.cs" />
-    <Compile Include="Migrations\201911131745434_SecondChange.Designer.cs">
-      <DependentUpon>201911131745434_SecondChange.cs</DependentUpon>
+    <Compile Include="Migrations\201911201803074_init1.cs" />
+    <Compile Include="Migrations\201911201803074_init1.Designer.cs">
+      <DependentUpon>201911201803074_init1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -258,7 +256,6 @@
     <Compile Include="Models\GateWayBL\GarageBL.cs" />
     <Compile Include="Models\GateWayBL\PlanBL.cs" />
     <Compile Include="Models\GateWayBL\StudentBL.cs" />
-    <Compile Include="Models\GateWayBL\UserBL.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -364,14 +361,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201911131602181_InitialCreate.resx">
-      <DependentUpon>201911131602181_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201911201802513_init.resx">
+      <DependentUpon>201911201802513_init.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201911131651128_FirstChange.resx">
-      <DependentUpon>201911131651128_FirstChange.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201911131745434_SecondChange.resx">
-      <DependentUpon>201911131745434_SecondChange.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201911201803074_init1.resx">
+      <DependentUpon>201911201803074_init1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

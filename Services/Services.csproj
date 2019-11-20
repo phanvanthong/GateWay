@@ -60,7 +60,6 @@
     <Compile Include="Repository\IPlanRepository.cs" />
     <Compile Include="Repository\IStudentRepository.cs" />
     <Compile Include="Repository\ITeacherRepository.cs" />
-    <Compile Include="Repository\IUserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Common\Common.csproj">

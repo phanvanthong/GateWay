@@ -10,7 +10,6 @@ namespace GateWay.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "GateWay.Models.ApplicationDbContext";
         }
 
         protected override void Seed(GateWay.Models.ApplicationDbContext context)

@@ -8,6 +8,7 @@ using Owin;
 
 namespace GateWay
 {
+
     public partial class Startup
     {
         public void Configuration(IAppBuilder app)
