@@ -10,7 +10,7 @@ namespace Services.Repository
     public interface IPlanRepository
     {
         string ConfirmReport();
-        string SendNotification();
+        bool SendNotification();
         List<Plan> GetSchedule();
     }
 }

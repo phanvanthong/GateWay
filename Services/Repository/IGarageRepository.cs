@@ -12,6 +12,6 @@ namespace Services.Repository
         List<Garage> GetListGarage();
         List<Plan> GetSchedule();
         List<Arrival> TrackMove();
-        string ReportPorblem();
+        string ReportProblem();
     }
 }

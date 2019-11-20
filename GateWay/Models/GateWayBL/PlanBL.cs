@@ -17,9 +17,9 @@ namespace GateWay.BL
             return null;
         }
 
-        public string SendNotification()
+        public bool SendNotification()
         {
-            return null;
+            return true;
         }
         public List<Plan> GetSchedule()
         {

@@ -29,13 +29,11 @@ namespace GateWay.BL
         }
         public List<Plan> GetSchedule()
         {
-            var lstSchedule = context.Plans.ToList();
-            return lstSchedule;
+            return context.Plans.ToList();
         }
         public IEnumerable<Arrival> TrackMove()
         {
-            var lstArrival = context.Arrivals.ToList();
-            return lstArrival;
+            return context.Arrivals.ToList();
         }
         public bool CheckPlaceSent()
         {

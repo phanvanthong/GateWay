@@ -10,8 +10,8 @@ namespace Services.Repository
     public interface ICartypeRepository
     {
         List<CarType> GetAllCarType();
-        object AddCarType();
-        object UpdateCarType();
-        object DeleteCarType();
+        bool AddCarType(CarType carType);
+        bool UpdateCarType(CarType carType);
+        bool DeleteCarType(Guid ID);
     }
 }

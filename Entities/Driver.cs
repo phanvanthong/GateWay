@@ -12,7 +12,7 @@ namespace Entities
         public Guid DriverID { get; set; }
         public string DriverName { get; set; }
         public string Phone { get; set; }
-
+        public List<Notification> Notifications { get; set; }
 
 
         /// <summary>

@@ -12,12 +12,7 @@ namespace Entities
         public Guid StudentID { get; set; }
         public string StudentName { get; set; }
         public bool StatusStudent { get; set; }
+        public List<Notification> Notifications { get; set; }
 
-        /// <summary>
-        /// Khóa ngoại
-        /// </summary>
-        [Key]
-        public User user { get; set; }
-        public Guid UserID { get; set; }
     }
 }

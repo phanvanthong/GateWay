@@ -17,17 +17,34 @@ namespace GateWay.BL
             return context.CarTypes.ToList();
         }
 
-        public object AddCarType()
+        public bool AddCarType(CarType carType)
         {
-            return 0;
+            context.CarTypes.Add(carType);
+            context.SaveChanges();
+            return true;
         }
-        public object UpdateCarType()
+        public bool UpdateCarType(CarType carType)
         {
-            return 0;
+            CarType carType1 = context.CarTypes.SingleOrDefault(n => n.CarTypeID == carType.CarTypeID);
+            if (carType1 !=null)
+            {
+                carType1.CarTypeName = carType.CarTypeName;
+                carType1.Seats = carType.Seats;
+                context.SaveChanges();
+                return true;
+            }
+            return false;
         }
-        public object DeleteCarType()
+        public bool DeleteCarType(Guid ID)
         {
-            return 0;
+            CarType carType = context.CarTypes.SingleOrDefault(n => n.CarTypeID == ID);
+            if (carType != null)
+            {
+                context.CarTypes.Remove(carType);
+                context.SaveChanges();
+                return true;
+            }
+            return false;
         }
     }
 }

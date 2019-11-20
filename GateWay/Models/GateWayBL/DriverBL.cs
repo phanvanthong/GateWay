@@ -18,10 +18,9 @@ namespace GateWay.BL
             var lstDriver = context.Drivers.ToList();
             return lstDriver;
         }
-        public Driver FindDriver()
+        public Driver FindDriver(Guid ID)
         {
-            Driver diver = new Driver();
-            return diver;
+            return context.Drivers.SingleOrDefault(n=> n.DriverID == ID);
         }
     }
 }

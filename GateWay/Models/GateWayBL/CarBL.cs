@@ -13,7 +13,7 @@ namespace GateWay.BL
         {
             return 0;
         }
-        public  object CheckOutCar()
+        public object CheckOutCar()
         {
             return 0;
         }

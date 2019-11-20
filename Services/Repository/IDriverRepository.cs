@@ -10,6 +10,6 @@ namespace Services.Repository
     public interface IDriverRepository
     {
         List<Driver> GetListDriver();
-        Driver FindDriver();
+        Driver FindDriver(Guid ID);
     }
 }

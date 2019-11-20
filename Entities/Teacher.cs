@@ -10,5 +10,6 @@ namespace Entities
     {
         public Guid TeacherID { get; set; }
         public string TeacherName { get; set; }
+        public List<Notification> Notifications { get; set; }
     }
 }

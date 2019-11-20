@@ -13,18 +13,18 @@ namespace GateWay.BL
     {
         public ApplicationDbContext context = new ApplicationDbContext();
         public List<Garage> GetListGarage() {
-            return null;
+            return context.Garages.ToList();
         }
         public List<Plan> GetSchedule()
         {
-            return null;
+            return context.Plans.ToList();
         }
         public List<Arrival> TrackMove()
         {
-            return null;
+            return context.Arrivals.ToList();
         }
 
-        public string ReportPorblem()
+        public string ReportProblem()
         {
             return null;
         }
